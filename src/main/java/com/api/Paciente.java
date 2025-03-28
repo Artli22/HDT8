@@ -23,6 +23,7 @@ public class Paciente implements Comparable<Paciente> {
         return prioridad;
     }
 
+    // Orden basado en prioridad (A es más urgente que B, etc.)
     @Override
     public int compareTo(Paciente otro) {
         return Character.compare(this.prioridad, otro.prioridad);

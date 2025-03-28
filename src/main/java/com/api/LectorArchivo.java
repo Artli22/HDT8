@@ -3,7 +3,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LectorArchivo {
     
@@ -14,12 +15,12 @@ public class LectorArchivo {
     }
 
     /**
-     * Lee el archivo y devuelve un Vector de pacientes.
+     * Lee el archivo y devuelve una lista de objetos Paciente.
      * 
-     * @return Vector<Paciente> con todos los pacientes leídos
+     * @return List<Paciente> con todos los pacientes
      */
-    public Vector<Paciente> leerPacientes() {
-        Vector<Paciente> pacientes = new Vector<>();
+    public List<Paciente> leerPacientes() {
+        List<Paciente> pacientes = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
             String linea;
