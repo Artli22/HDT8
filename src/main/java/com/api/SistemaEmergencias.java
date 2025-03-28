@@ -1,11 +1,26 @@
+//  @ Hoja de trabajo 8
+//  @ File Name : SistemaEmergencias.java
+//  @ Date : 27/03/2025
+//  @ Author : Alejandro Manuel Jerez Melgar 24678
+//
+
 package com.api;
 
 import java.util.PriorityQueue;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Clase principal que simula un sistema de emergencias hospitalarias.
+ * Utiliza una cola de prioridad para atender pacientes según su nivel de prioridad.
+ */
 public class SistemaEmergencias {
 
+    /**
+     * Método principal que ejecuta el sistema de emergencias.
+     * 
+     * @param args Argumentos de línea de comandos (no utilizados).
+     */
     public static void main(String[] args) {
         // Crear PriorityQueue con orden basado en Comparable
         PriorityQueue<Paciente> cola = new PriorityQueue<>();
