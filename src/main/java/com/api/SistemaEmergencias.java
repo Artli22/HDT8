@@ -1,10 +1,24 @@
+//  @ Hoja de trabajo 8
+//  @ File Name : SistemaEmergencias.java
+//  @ Date : 27/03/2025
+//  @ Author : Alejandro Manuel Jerez Melgar 24678
+//
+
 package com.api;
 
 import java.util.Scanner;
 import java.util.Vector;
 
+/**
+ * Main class for the hospital emergency system.
+ */
 public class SistemaEmergencias {
 
+    /**
+     * Main method to run the emergency system.
+     * 
+     * @param args Command-line arguments (not used).
+     */
     public static void main(String[] args) {
         VectorHeap<Paciente> cola = new VectorHeap<>();
         LectorArchivo lector = new LectorArchivo("pacientes.txt");
