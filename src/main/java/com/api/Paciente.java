@@ -1,3 +1,5 @@
+package com.api;
+
 public class Paciente implements Comparable<Paciente> {
     private String nombre;
     private String sintoma;
