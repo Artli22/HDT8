@@ -1,10 +1,22 @@
+//  @ Hoja de trabajo 8
+//  @ File Name : SistemaEmergenciasHeap.java
+//  @ Date : 02/04/2025
+//  @ Author : Alejandro Manuel Jerez Melgar 24678
+//
+
 package com.api;
 
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Implementation of SistemaEmergenciasInterface using a VectorHeap.
+ */
 public class SistemaEmergenciasHeap implements SistemaEmergenciasInterface {
 
+    /**
+     * Executes the emergency system using a VectorHeap.
+     */
     @Override
     public void ejecutar() {
         VectorHeap<Paciente> cola = new VectorHeap<>();

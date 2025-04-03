@@ -1,11 +1,23 @@
+//  @ Hoja de trabajo 8
+//  @ File Name : SistemaEmergenciasJCF.java
+//  @ Date : 02/04/2025
+//  @ Author : Alejandro Manuel Jerez Melgar 24678
+//
+
 package com.api;
 
 import java.util.PriorityQueue;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Implementation of SistemaEmergenciasInterface using Java Collection Framework.
+ */
 public class SistemaEmergenciasJCF implements SistemaEmergenciasInterface {
 
+    /**
+     * Executes the emergency system using a PriorityQueue.
+     */
     @Override
     public void ejecutar() {
         PriorityQueue<Paciente> cola = new PriorityQueue<>();
